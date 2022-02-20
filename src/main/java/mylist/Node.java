@@ -10,13 +10,11 @@ import lombok.Setter;
 /**
  * Lombok, hello!)
  * */
-@Setter
+@Setter(AccessLevel.PACKAGE)
 @Getter
 @AllArgsConstructor
 public class Node {
-    @Setter(AccessLevel.PACKAGE)
     private Object value;
-    @Setter(AccessLevel.PACKAGE)
     private Node next;
 
     public Node(Object value) {
